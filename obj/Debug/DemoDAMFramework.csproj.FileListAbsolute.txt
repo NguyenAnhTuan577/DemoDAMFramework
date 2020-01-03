@@ -1,0 +1,12 @@
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\bin\Debug\DemoDAMFramework.exe.config
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\bin\Debug\DemoDAMFramework.exe
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\bin\Debug\DemoDAMFramework.pdb
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\bin\Debug\DAMFramework.dll
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\bin\Debug\DAMFramework.pdb
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.csprojAssemblyReference.cache
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.Properties.Resources.resources
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.csproj.GenerateResource.cache
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.csproj.CoreCompileInputs.cache
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.csproj.CopyComplete
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.exe
+D:\School\Mẫu Thiết Kế và Hướng Đối Tượng\Đồ án\My Code\DemoDAMFramework\DemoDAMFramework\obj\Debug\DemoDAMFramework.pdb
