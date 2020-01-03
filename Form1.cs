@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAM_ORMFramework;
+using DAM_ORMFramework.Query;
 using DAM_ORMFramework.Attribute;
+using DAM_ORMFramework.Mapping;
+using System.Configuration;
 
 namespace DemoDAMFramework
 {
@@ -17,7 +20,9 @@ namespace DemoDAMFramework
         public Form1()
         {
             InitializeComponent();
+
             OneToMany oneToMany = new OneToMany("1","user");
+            SqlServerConnection cnn = new SqlServerConnection(ConfigurationManager.ConnectionStrings["DemoDAMFramework.Properties.Settings.Setting"].ConnectionString);
         }
     }
 }
