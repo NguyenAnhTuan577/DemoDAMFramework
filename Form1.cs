@@ -86,7 +86,7 @@ namespace DemoDAMFramework
                     }
                     catch (Exception err)
                     {
-                        MessageBox.Show(err.Message);
+                        MessageBox.Show("Mã dữ liệu đã tồn tại không thể thêm mới");
                     }
                 }
             }
