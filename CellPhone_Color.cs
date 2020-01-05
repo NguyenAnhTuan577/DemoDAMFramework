@@ -8,13 +8,17 @@ namespace DemoDAMFramework
     {
         [PrimaryKey("ID",true)]
         [Column("ID",DataType.INT)]
-        [ForeignKey("3","CellPhoneID","ID")]
-        public string ID { get; set; }
-        
+        public int ID { get; set; }
+
+        [ForeignKey("3", "CellPhoneID", "ID")]
         [Column("CellPhoneID",DataType.VARCHAR)]
         public string CellPhoneID { get; set; }
 
+        [ManyToOne("3","CellPhone")]
+    
+        [ForeignKey("2","ID","ColorID")]
+
         [Column("ColorID",DataType.INT)]
-        public string ColorID { get; set; }
+        public int ColorID { get; set; }
     }
 }
