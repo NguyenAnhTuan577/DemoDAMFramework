@@ -23,8 +23,7 @@ namespace DemoDAMFramework
         
         [OneToOne("2","Price")]
         [ForeignKey("2","ID","CellPhoneID")]
-
-        public Price Price { get; set; }
+        public Phone_Price Price { get; set; }
 
         [OneToMany("3","CellPhone_Color")]
         public List<CellPhone_Color> CellPhone_Colors { get; set; }

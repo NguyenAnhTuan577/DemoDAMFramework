@@ -9,7 +9,7 @@ namespace DemoDAMFramework
         [PrimaryKey("ID",true)]
         [Column("ID",DataType.INT)]
         [ForeignKey("3","CellPhoneID","ID")]
-        public string ID { get; set; }
+        public int ID { get; set; }
         
         [Column("CellPhoneID",DataType.VARCHAR)]
         public string CellPhoneID { get; set; }
