@@ -7,7 +7,7 @@ namespace DemoDAMFramework
     [Table("CellPhone")]
     public class CellPhone
     {
-        [PrimaryKey("ID",true)]
+        [PrimaryKey("ID",false)]
         [Column("ID",DataType.VARCHAR)]
         public string ID { get; set; }
 

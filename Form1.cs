@@ -94,6 +94,7 @@ namespace DemoDAMFramework
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            int indexRowSelected = grvCellphone.CurrentCell.RowIndex;
             if (string.IsNullOrEmpty(txtMa.Text) || string.IsNullOrEmpty(txtTen.Text)
                 || string.IsNullOrEmpty(txtGiatien.Text) || cbHangSX.SelectedIndex <= 0)
             {
@@ -102,17 +103,19 @@ namespace DemoDAMFramework
             else
             {
                 if (MessageBox.Show("Thay đổi dữ liệu sẽ ảnh hưởng đến các bảng khác. Bạn có chắc chắn muốn thay đổi dữ liệu?", "Hộp thoại thông báo", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                { 
-                    CellPhone cp = new CellPhone();
+                {
+                    CellPhone cp = cellphones[indexRowSelected];
                     cp.ID = txtMa.Text;
                     cp.Name = txtTen.Text;
                     cp.MakerID = ((ItemComboBox)cbHangSX.SelectedItem).Value;
-                    cp.Price.Price = (double.Parse(txtGiatien.Text.ToString()));
                     Phone_Price pr = new Phone_Price();
-                   // pr.CellPhoneID = txtMa.Te;
+                    pr.CellPhoneID = txtMa.Text;
+                    pr.Price = (double.Parse(txtGiatien.Text.ToString()));
+                    pr.ID = cp.Price.ID;
                     try
                     {
                         connection.Open();
+                        connection.Update(pr);
                         connection.Update(cp);
                         connection.Close();
                         Form1_Load(sender, e);
