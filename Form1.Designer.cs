@@ -45,6 +45,7 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.txtGiatien = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grvCellphone)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             this.Price});
             this.grvCellphone.Location = new System.Drawing.Point(0, 210);
             this.grvCellphone.Name = "grvCellphone";
-            this.grvCellphone.Size = new System.Drawing.Size(736, 198);
+            this.grvCellphone.Size = new System.Drawing.Size(809, 198);
             this.grvCellphone.TabIndex = 0;
             this.grvCellphone.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvCellPhone_CellClick);
             // 
@@ -91,7 +92,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(593, 26);
+            this.btnAdd.Location = new System.Drawing.Point(572, 40);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 35);
             this.btnAdd.TabIndex = 1;
@@ -101,7 +102,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(593, 147);
+            this.btnDelete.Location = new System.Drawing.Point(695, 39);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(92, 35);
             this.btnDelete.TabIndex = 2;
@@ -111,7 +112,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(593, 84);
+            this.btnEdit.Location = new System.Drawing.Point(695, 123);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(93, 35);
             this.btnEdit.TabIndex = 3;
@@ -139,7 +140,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 126);
+            this.label2.Location = new System.Drawing.Point(16, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 6;
@@ -156,7 +157,7 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(104, 123);
+            this.txtTen.Location = new System.Drawing.Point(104, 131);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(135, 20);
             this.txtTen.TabIndex = 9;
@@ -170,7 +171,7 @@
             // 
             // txtGiatien
             // 
-            this.txtGiatien.Location = new System.Drawing.Point(405, 123);
+            this.txtGiatien.Location = new System.Drawing.Point(405, 131);
             this.txtGiatien.Name = "txtGiatien";
             this.txtGiatien.Size = new System.Drawing.Size(121, 20);
             this.txtGiatien.TabIndex = 13;
@@ -178,17 +179,28 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(318, 126);
+            this.label5.Location = new System.Drawing.Point(317, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 14;
             this.label5.Text = "Giá tiền";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(572, 123);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 35);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Reset";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 408);
+            this.ClientSize = new System.Drawing.Size(810, 408);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtGiatien);
             this.Controls.Add(this.txtMa);
@@ -230,6 +242,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NSX;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoMau;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Button button1;
     }
 }
 

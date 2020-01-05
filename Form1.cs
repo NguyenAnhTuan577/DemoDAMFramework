@@ -58,11 +58,7 @@ namespace DemoDAMFramework
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            txtMa.Enabled = true;
-            txtMa.Text = null;
-            txtTen.Text = null;
-            txtGiatien.Text = null;
-            cbHangSX.SelectedItem = 0;
+          
             if (string.IsNullOrEmpty(txtMa.Text) || string.IsNullOrEmpty(txtTen.Text)
                 || string.IsNullOrEmpty(txtGiatien.Text) || cbHangSX.SelectedIndex<=0)
             {
@@ -76,7 +72,6 @@ namespace DemoDAMFramework
                     cp.ID = txtMa.Text;
                     cp.Name = txtTen.Text;
                     cp.MakerID = ((ItemComboBox)cbHangSX.SelectedItem).Value;
-                    cp.Price.Price = (double.Parse(txtGiatien.Text.ToString()));
                     Phone_Price pr = new Phone_Price();
                     pr.CellPhoneID = txtMa.Text;
                     pr.Price = (double.Parse(txtGiatien.Text.ToString()));
@@ -174,6 +169,15 @@ namespace DemoDAMFramework
                     cbHangSX.SelectedIndex = i;
 
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtMa.Enabled = true;
+            txtMa.Text = null;
+            txtTen.Text = null;
+            txtGiatien.Text = "0";
+            cbHangSX.SelectedIndex = 0;
         }
     }
     public class ItemComboBox
