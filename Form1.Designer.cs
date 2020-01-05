@@ -43,8 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtMa = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbColor = new System.Windows.Forms.ComboBox();
             this.txtGiatien = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grvCellphone)).BeginInit();
@@ -64,6 +62,7 @@
             this.grvCellphone.Name = "grvCellphone";
             this.grvCellphone.Size = new System.Drawing.Size(736, 198);
             this.grvCellphone.TabIndex = 0;
+            this.grvCellphone.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvCellPhone_CellClick);
             // 
             // MaDT
             // 
@@ -123,7 +122,7 @@
             // cbHangSX
             // 
             this.cbHangSX.FormattingEnabled = true;
-            this.cbHangSX.Location = new System.Drawing.Point(378, 35);
+            this.cbHangSX.Location = new System.Drawing.Point(405, 58);
             this.cbHangSX.Name = "cbHangSX";
             this.cbHangSX.Size = new System.Drawing.Size(121, 21);
             this.cbHangSX.TabIndex = 4;
@@ -131,7 +130,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(289, 40);
+            this.label1.Location = new System.Drawing.Point(297, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 13);
             this.label1.TabIndex = 5;
@@ -140,7 +139,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 95);
+            this.label2.Location = new System.Drawing.Point(12, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 6;
@@ -149,7 +148,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 40);
+            this.label3.Location = new System.Drawing.Point(16, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 7;
@@ -157,46 +156,29 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(104, 92);
+            this.txtTen.Location = new System.Drawing.Point(104, 123);
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(135, 20);
             this.txtTen.TabIndex = 9;
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(104, 36);
+            this.txtMa.Location = new System.Drawing.Point(104, 59);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(135, 20);
             this.txtMa.TabIndex = 10;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(304, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Màu sắc";
-            // 
-            // cbColor
-            // 
-            this.cbColor.FormattingEnabled = true;
-            this.cbColor.Location = new System.Drawing.Point(378, 92);
-            this.cbColor.Name = "cbColor";
-            this.cbColor.Size = new System.Drawing.Size(121, 21);
-            this.cbColor.TabIndex = 12;
-            // 
             // txtGiatien
             // 
-            this.txtGiatien.Location = new System.Drawing.Point(104, 147);
+            this.txtGiatien.Location = new System.Drawing.Point(405, 123);
             this.txtGiatien.Name = "txtGiatien";
-            this.txtGiatien.Size = new System.Drawing.Size(135, 20);
+            this.txtGiatien.Size = new System.Drawing.Size(121, 20);
             this.txtGiatien.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(30, 150);
+            this.label5.Location = new System.Drawing.Point(318, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 14;
@@ -209,8 +191,6 @@
             this.ClientSize = new System.Drawing.Size(735, 408);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtGiatien);
-            this.Controls.Add(this.cbColor);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtMa);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label3);
@@ -243,8 +223,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TextBox txtMa;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cbColor;
         private System.Windows.Forms.TextBox txtGiatien;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDT;

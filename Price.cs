@@ -11,10 +11,14 @@ namespace DemoDAMFramework
        public int ID { get; set; }
 
        [Column("CellPhoneID",DataType.VARCHAR)]
+       [ForeignKey("1", "CellPhoneID", "ID")]
        public string CellPhoneID { get; set; }
 
-       [Column("Price",DataType.FLOAT)]
-       public double Price { get; set; }
 
+       [OneToOne("1", "CellPhone")]
+       public CellPhone Cellphone { get; set; }
+
+       [Column("Price", DataType.FLOAT)]
+       public double Price { get; set; }
     }
 }

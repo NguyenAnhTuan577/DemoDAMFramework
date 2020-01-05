@@ -9,6 +9,7 @@ namespace DemoDAMFramework
     {
         [PrimaryKey("ID", true)]
         [Column("ID",DataType.INT)]
+        [ForeignKey("1", "ID", "ColorID")]
         public int ID { get; set; }
 
         [Column("Name",DataType.NVARCHAR)]
