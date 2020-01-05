@@ -22,7 +22,7 @@ namespace DemoDAMFramework
         public Maker Maker { get; set; }
         
         [OneToOne("2","Price")]
-        [ForeignKey("2","ID","CellPhoneID")]
+        [ForeignKey("2", "ID", "CellPhoneID")]
         public Phone_Price Price { get; set; }
 
         [OneToMany("3","CellPhone_Color")]
